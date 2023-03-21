@@ -54,7 +54,7 @@ namespace PetrolEngine{
         void pollEvents(            ) override {};
         void close     (            ) override {};
 
-        int init() override {};
+        int init() override { return 0; };
 
         bool shouldClose() override { return false; };
         bool isPressed(Keys key) override { return false; };
